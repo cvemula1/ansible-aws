@@ -9,7 +9,7 @@
       wait: yes
     register: k8s_master
  
-  - debug: msg="k8s master IP is {{ item.public_ip }}"
+  - debug: msg= "k8s master IP is {{ item.public_ip }}"
     with_items: k8s_master.instances
 
   - name: Add new instance to host group
