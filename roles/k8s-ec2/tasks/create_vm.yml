@@ -8,6 +8,7 @@
       user_data: "{{ lookup('template', '../templates/k8s-master.j2') }}"
       wait: yes
     register: k8s_master
+    
   - name: check for public ip
     debug: "msg= k8s master IP is: '{{ item.public_ip }}'"
     with_items: k8s_master.instances
