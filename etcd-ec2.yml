@@ -4,11 +4,11 @@
 
   vars:
     ssh_key: etcd
-    aws_region: eu-west-1
-    etcd_num_nodes: 3
+    aws_region: us-east-1
+    etcd_num_nodes: 2
     etcd_security_group_name: etcd
-    etcd_template: ami-7bf27e0c 
-    etcd_instance_type: m1.small
+    etcd_template: ami-e965ba80 
+    etcd_instance_type: t2.micro
 
   pre_tasks:
     - name: Get bootstrap token for etcd
