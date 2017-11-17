@@ -14,7 +14,7 @@
     - name: Get bootstrap token for etcd
       command: curl -w "\n" https://discovery.etcd.io/new
       register: token
-    - debug: msg='Etcd token is {{ token.stdout }}'
+    - debug: msg=Etcd token is "{{ token.stdout }}"
     
   roles:
     - common-ec2
