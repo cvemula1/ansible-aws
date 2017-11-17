@@ -11,4 +11,4 @@
     register: ec2
     
   - debug: msg=etcd node IP is "{{ item.public_ip }}"
-    with_items: "{{ ec2.instances }}'
+    with_items: "{{ ec2.instances }}"
